@@ -41,14 +41,24 @@ _Список призанков: 'Название', 'Время суток', '
 </p>
 
 ## Подробная структура сети
-Вы можете найти её в [этом файле](https://github.com/i-pro-lizaalert/ml-torch-fastapi/blob/main/docs/model_summary.txt). Также, имеется схема [backward pass'а](https://github.com/i-pro-lizaalert/ml-torch-fastapi/blob/main/docs/backward_pass_example.png).
+Вы можете найти её summary в [этом файле](https://github.com/i-pro-lizaalert/ml-torch-fastapi/blob/main/docs/model_summary.txt). Также, имеется схема [backward pass'а](https://github.com/i-pro-lizaalert/ml-torch-fastapi/blob/main/docs/backward_pass_example.png).
 
-## Дополнительныые удобства
+## Дополнительные удобства
 - Модель легко расширяется, при обучении дополнительных классификаторов не требуется переобучать модель целиком
 - Обёртка в микросервис, позволяющая легко интегрировать его в существующую систему 
 
 # Самое интересное здесь!
 _Демо_ модели доступно по [ссылке](#) (если ещё не добавил - ищите на сайте http://i-pro.duckdns.org)
+
+## Запуск микросервиса
+Чтобы запустить микросервис достаточно установить зависимости, скачать веса и запустить скрипт. Для запуска требуется Python3.
+По стандарту сервер запускается на localhost:8081
+```bash
+# Установка зависимостей
+pip3 install -r requirements.txt
+# Запуск сервера
+python3 server.py
+```
 
 
 ---
