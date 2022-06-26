@@ -10,7 +10,9 @@
 - Автор кейса: Цифровой прорыв - Уральский федеральный округ - Лиза Алерт
 - Кейс: "ИИ фотобанк для поискового отряда"
 - Решают: команда **I PRO**
-
+- [Репозиторий - фронтенд](https://github.com/i-pro-lizaalert/frontend-nextjs)
+- [Репозиторий - бекенд](https://github.com/i-pro-lizaalert/backend-fastapi)
+- [Репозиторий - нейронная сеть](https://github.com/i-pro-lizaalert/ml-torch-fastapi)
 ---
 
 ## Постановка задачи
