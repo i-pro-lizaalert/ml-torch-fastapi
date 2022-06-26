@@ -9,7 +9,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import UploadFile, File
 
-app = FastAPI()
+app = FastAPI(title='Демо нейронной модели')
 
 app.add_middleware(
     CORSMiddleware,
@@ -129,10 +129,6 @@ model = torch.load(
 )
 
 
-@app.get('/')
-async def root():
-    return {'hello': 'world'}
-
 
 def decodeImage(pilBytes):
     imBytes = pilBytes
@@ -141,9 +137,9 @@ def decodeImage(pilBytes):
     return img
 
 
-@app.post("/prediction")
+@app.post("/prediction",description='Присваивает тэги к картинке')
 async def predict(
-    File: UploadFile = File(...),
+    File: UploadFile = File(..., description='Файл для теггирования'),
 ):
     # They come already 256 x 256, only need is to turn to Tensor.
     image = decodeImage(File.file.read())
