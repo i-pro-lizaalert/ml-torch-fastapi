@@ -1,0 +1,7 @@
+fastapi
+cv2
+uvicorn
+torch
+torchvision
+PIL
+numpy
